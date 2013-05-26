@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Project</title>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+	<style>
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+
+	* { box-sizing: border-box }
+
+	body {
+		font-size: 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin: 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: Oswald, Helvetica, Arial, sans-serif;
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 50px;
+		text-shadow: 1px 1px 0 #332E30;
+		text-align: center;
+		color: white;
+		margin: 0;
+		padding-top: 25px;
+	}
+
+	h2 {
+		font-size: 30px;
+		text-align: center;
+		color: black;
+		margin-top: 20px;
+	}
+
+	.menu {
+		width: 100%;
+		height: 70px;
+		margin: 0;
+		padding-top: 25px;
+		font-family: Oswald, Helvetica, Arial, sans-serif;
+		background: white;
+		text-align: center;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+		font-size: 20px;
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+
+	.menu ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu li {
+		display: inline; 
+		padding: 40px; 
+	}
+
+	.logo {
+		background: url(images/ladieslearningcodelogo.png) no-repeat;
+		height: 70px;
+		width: 70px;
+		margin: 0 auto;
+	}
+
+	.section {
+		padding: 0 100px 0 100px;
+	}
+
+	.box {
+		height: 550px;
+		width: 100%;
+		padding: 20px;
+		border-top: 1px solid gray;
+	}
+
+	.box1 {
+		background: url(images/background.jpg) no-repeat center top fixed; 
+		height: 600px;
+		width: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding-top: 150px;
+	}
+
+	.box1 h2 {
+		color: white;
+	}
+
+	.box2 {
+		background: url(images/subtle_dots.png) repeat center top fixed;
+		height: 450px;
+	}
+
+	.box2 h1 {
+		color: black;
+		margin-bottom: 40px;
+	}
+
+	.profile {
+		padding: 10px;
+		background: white;
+		margin-left: 75px;
+		margin-top: -5px;
+		-moz-box-shadow:    3px 3px 2px 2px #ccc;
+		-webkit-box-shadow: 3px 3px 2px 2px #ccc;
+		box-shadow:         3px 3px 2px 2px #ccc;
+
+	}
+
+	.right {
+		float: right;
+		width: 70%;
+		margin-bottom: 12px;
+		padding: 0 20px 0 0;
+	}
+
+	.box3 {
+		background: url(images/escheresque.png) repeat center top fixed;
+		padding-bottom: 100px;
+	}
+
+	.box3 h1 {
+		color: black;
+	}
+
+	.round {
+		border-radius: 50%;
+		width: 250px;
+		height: 250px;
+		padding: 10px;
+		background: white;
+		-moz-box-shadow:    3px 3px 2px 2px #ccc;
+		-webkit-box-shadow: 3px 3px 2px 2px #ccc;
+		box-shadow:         3px 3px 2px 2px #ccc;
+	}
+
+	.favouriteThings ul {
+		width: 100%;
+	}
+
+	.favouriteThings li {
+		width: 20%;
+		float: left;
+		margin: 34px;
+		height: 300px;
+	}
+
+	p.favourite {
+		font-family: Oswald, Helvetica, Arial, sans-serif;
+		text-align: center;
+		margin-top: 20px;
+		width: 250px;
+	}
+
+	.box4 {
+		background-color: white;
+		height: 600px;
+	}
+
+	.box4 h1 {
+		color: black;
+	}
+
+	.box4 h2 {
+		margin-bottom: 40px;
+	}
+
+	.map {
+		height: 250px;
+		width: 425px;
+		float: left;
+		padding: 10px;
+		margin-left: 75px;
+		background: gray;
+	}
+
+	.why p {
+		float: left;
+		width: 58%;
+		margin-left: 55px;
+		margin-right: 20px;
+	}
+
+	ul.social {
+		list-style: none;
+		
+	}
+
+	</style>
+
+</head>
+
+<body>
+		<div class="menu">
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Favourite Things</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+		<div class="section box box1">
+			<div class="logo"></div>
+			<h1>Your Name Here</h1>
+			<h2>Your tagline here</h2>
+		</div>
+		<div class="section box box2">
+			<h1>About</h1>
+			<p class="right">Cupcake ipsum dolor sit amet toffee cookie carrot cake. Cotton candy tiramisu cheesecake. I love pie gummies faworki croissant faworki candy. Candy chocolate cake caramels gummi bears. Cotton candy gummi bears toffee macaroon candy canes. Powder I love cookie candy lemon drops. Apple pie carrot cake wafer.</p>
+
+			<p class="right">Cupcake ipsum dolor sit amet toffee cookie carrot cake. Cotton candy tiramisu cheesecake. I love pie gummies faworki croissant faworki candy. Candy chocolate cake caramels gummi bears. Cotton candy gummi bears toffee macaroon candy canes. Powder I love cookie candy lemon drops. Apple pie carrot cake wafer.</p>
+
+			<p class="right">Cupcake ipsum dolor sit amet toffee cookie carrot cake. Cotton candy tiramisu cheesecake. I love pie gummies faworki croissant faworki candy. Candy chocolate cake caramels gummi bears. Cotton candy gummi bears toffee macaroon candy canes. Powder I love cookie candy lemon drops. Apple pie carrot cake wafer.</p>
+			<img class="profile" src="images/profile.jpg">
+		</div>
+		<div class="section box box3">
+			<h1>My Favourite Things</h1>
+			<h2>Here are a few things that I really love:</h2>
+			<ul class="favouriteThings">
+				<li class="fourth">
+					<img class="round" src="images/kitten.jpg">
+					<p class="favourite">I love kittens because they're super cute and friendly.</p>
+				</li>
+				<li class="fourth">
+					<img class="round" src="images/kitten.jpg">
+					<p class="favourite">I love kittens because they're super cute and friendly.</p>
+				</li>
+				<li class="fourth">
+					<img class="round" src="images/kitten.jpg">
+					<p class="favourite">I love kittens because they're super cute and friendly.</p>
+				</li>
+				<li class="fourth">
+					<img class="round" src="images/kitten.jpg">
+					<p class="favourite">I love kittens because they're super cute and friendly.</p>
+				</li>
+			</ul>
+		</div>
+		<div class="section box box4">
+			<h1>Contact Me</h1>
+			<h2>Some text here</h2>
+			<div class="map">
+				<iframe src="https://maps.google.ca/maps?q=720+bathurst+street&amp;ie=UTF8&amp;hq=&amp;hnear=720+Bathurst+St,+Toronto,+Ontario+M5S+2R4&amp;gl=ca&amp;t=m&amp;z=14&amp;ll=43.663291,-79.410618&amp;output=embed"></iframe>
+			</div>
+				<div class="why">
+					<p>Cupcake ipsum dolor sit amet toffee cookie carrot cake. Cotton candy tiramisu cheesecake. I love pie gummies faworki croissant faworki candy. Candy chocolate cake caramels gummi bears. Cotton candy gummi bears toffee macaroon candy canes. Powder I love cookie candy lemon drops. Apple pie carrot cake wafer.</p>
+					<div class="social">
+						<ul class="icon">
+							<li>Twitter</li>
+							<li>Facebook</li>
+							<li>Linkedin</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
