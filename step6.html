@@ -10,7 +10,20 @@
     p {
       line-height: 1.4;
     }
-
+    .profile {
+      border: 1px solid #aeaeae;
+      width: 250px;
+      height: 250px;
+    }
+    .favourites {
+      list-style: none;
+      padding-left: 0;
+    }
+    .favourites img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
   </style>
 </head>
 <body>
@@ -18,11 +31,11 @@
   <h1>Your name here</h1>
   <p>Your tagline here</p>
   <h2>About Me</h2>
-  <img src="images/profile.jpg">
+  <img class="profile" src="images/profile.jpg">
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo.</p>
   <h2>My Favourite Things</h2>
   <h3>Here are a few things I really love</h3>
-  <ul>
+  <ul class="favourites">
     <li>
       <img src="images/kitten.jpg">
       <p>I love Puppies</p>
