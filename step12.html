@@ -19,12 +19,14 @@
       margin-right: 10px;
       padding: 5px;
     }
-    .favourite {
+   .favourite {
       width: 200px;
       height: 200px;
       border-radius: 50%;
       border: 1px solid #aeaeae;
       padding: 5px;
+      margin: 20px;
+      background: #fff;
     }
     .logo {
       display: block;
@@ -42,6 +44,34 @@
     .banner p {
       font-size: 28px;
     }
+    .about {
+      overflow: hidden;
+      background: url('images/subtle_dots.png') repeat;
+    }
+    .about img {
+      float: left;
+      margin-right: 40px;
+    }
+    .favourites {
+      background: url('images/escheresque.png') repeat;
+      text-align: center;
+    }
+    .map {
+      float: left;
+      margin-right: 40px;
+    }
+    .contact a {
+      color: #A8258D;
+    }
+    .box {
+      padding: 50px 100px;
+    }
+    .box h2 {
+      color: #A8258D;
+    }
+    .box h2, .box h3 {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -50,20 +80,32 @@
     <h1>Your name here</h1>
     <p>Your tagline here</p>
   </section>
-  <h2>About Me</h2>
-  <img class="profile" src="images/profile.jpg">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo.</p>
-  <h2>My Favourite Things</h2>
-  <h3>Here are a few things I really love</h3>
-  <img class="favourite" src="images/kitten.jpg">
-  <img class="favourite" src="images/kitten.jpg">
-  <img class="favourite" src="images/kitten.jpg">
-  <img class="favourite" src="images/kitten.jpg">
-  <h2>Contact Me</h2>
-  <ul>
-    <li><a href="https://twitter.com/tessthornton">Twitter</a></li>
-    <li><a href="https://facebook.com/tessthornton">Facebook</a></li>
-    <li><a href="https://linkedin.com/tessthornton">LinkedIn</a></li>
-  </ul>
+  <section class="about box">
+    <h2>About Me</h2>
+    <img class="profile" src="images/profile.jpg">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero voluptate eligendi quae impedit quos quia esse error mollitia velit. Necessitatibus distinctio a quis expedita ipsam ad facere natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nemo adipisci ad veritatis ab rem porro illum iure. Officiis harum voluptate dignissimos sit quaerat eveniet officia ratione accusamus est reiciendis.</p>    
+  </section>
+  <section class="favourites box">
+    <h2>My Favourite Things</h2>
+    <h3>Here are a few things I really love</h3>
+    <img class="favourite" src="images/kitten.jpg">
+    <img class="favourite" src="images/kitten.jpg">
+    <img class="favourite" src="images/kitten.jpg">
+    <img class="favourite" src="images/kitten.jpg">
+  </section>
+  <section class="contact box">   
+    <h2>Contact Me</h2>
+    <div class="map">
+      <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=csi+annex+toronto&amp;aq=&amp;sll=43.656877,-79.32085&amp;sspn=0.575265,1.240082&amp;ie=UTF8&amp;hq=csi+annex+toronto&amp;hnear=&amp;radius=15000&amp;ll=43.650679,-79.396875&amp;spn=0.004495,0.009688&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=2945598690040373509&amp;output=embed"></iframe><br /><small><a href="https://maps.google.ca/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=csi+annex+toronto&amp;aq=&amp;sll=43.656877,-79.32085&amp;sspn=0.575265,1.240082&amp;ie=UTF8&amp;hq=csi+annex+toronto&amp;hnear=&amp;radius=15000&amp;ll=43.650679,-79.396875&amp;spn=0.004495,0.009688&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=2945598690040373509" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    </div>
+    <p>Phone: (416) 123-4567</p>
+    <p>Email: test@example.com</p>
+    <ul>
+      <li><a href="https://twitter.com/tessthornton">Twitter</a></li>
+      <li><a href="https://facebook.com/tessthornton">Facebook</a></li>
+      <li><a href="https://linkedin.com/tessthornton">LinkedIn</a></li>
+    </ul>
+  </section>
 </body>
 </html>
